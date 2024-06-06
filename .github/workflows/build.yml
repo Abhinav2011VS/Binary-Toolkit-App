@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [windows-latest]
 
     steps:
       - name: Check out Git repository
@@ -37,8 +37,5 @@ jobs:
         with:
           name: built-files
           path: |
-            dist/**/*.dmg
             dist/**/*.exe
             dist/**/*.msi
-            dist/**/*.AppImage
-            dist/**/*.deb
